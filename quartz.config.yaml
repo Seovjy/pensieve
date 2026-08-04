@@ -7,7 +7,7 @@ configuration:
   analytics:
     provider: plausible
   locale: en-US
-  baseUrl: pensieve.github.io/quartz
+  baseUrl: seovjy.github.io/pensieve
   ignorePatterns:
     - private
     - templates
