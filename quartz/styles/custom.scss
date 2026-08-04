@@ -1,3 +1,14 @@
 @use "./variables.scss" as *;
 
 // put your custom CSS here!
+// 僅在首頁 (data-slug="index") 隱藏日期與中繼資料 (ContentMeta)
+body[data-slug="index"] {
+  .content-meta {
+    display: none;
+  }
+}
+
+/* 隱藏首頁 (index) 的 H1 大標題 */
+body[data-slug="index"] .article-title {
+  display: none;
+}

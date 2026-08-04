@@ -41,7 +41,7 @@ export default (() => {
 
     return (
       <head>
-        <title>{title}</title>
+        <title>{fileData.slug === "index" ? cfg.pageTitle : `${title} | ${cfg.pageTitle}`}</title>
         <meta charSet="utf-8" />
         {coreStylesheet && <link rel="preload" href={coreStylesheet} as="style" />}
         {coreScript && coreScript.contentType === "external" && (

@@ -85,18 +85,22 @@ function formatFontSpecification(
   return spec.name
 }
 
+function encodeGoogleFontFamily(value: string): string {
+  return encodeURIComponent(value).replace(/%20/g, "+")
+}
+
 export function googleFontHref(theme: Theme) {
   const { header, body, code } = theme.typography
-  const headerFont = formatFontSpecification("header", header)
-  const bodyFont = formatFontSpecification("body", body)
-  const codeFont = formatFontSpecification("code", code)
+  const headerFont = encodeGoogleFontFamily(formatFontSpecification("header", header))
+  const bodyFont = encodeGoogleFontFamily(formatFontSpecification("body", body))
+  const codeFont = encodeGoogleFontFamily(formatFontSpecification("code", code))
 
   return `https://fonts.googleapis.com/css2?family=${headerFont}&family=${bodyFont}&family=${codeFont}&display=swap`
 }
 
 export function googleFontSubsetHref(theme: Theme, text: string) {
   const title = theme.typography.title || theme.typography.header
-  const titleFont = formatFontSpecification("title", title)
+  const titleFont = encodeGoogleFontFamily(formatFontSpecification("title", title))
 
   return `https://fonts.googleapis.com/css2?family=${titleFont}&text=${encodeURIComponent(text)}&display=swap`
 }
