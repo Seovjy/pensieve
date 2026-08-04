@@ -1,3 +1,6 @@
+---
+title: "The Pensieve"
+---
 <a href="https://saveuzz.deviantart.com/art/Pensieve-682191799" target="_blank" rel="noopener noreferrer">
 <img src="Pensieve.gif" width="300" alt="Pensieve Animation">
 </a>
