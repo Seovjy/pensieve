@@ -2,7 +2,7 @@
 title: "The Pensieve"
 ---
 <a href="https://saveuzz.deviantart.com/art/Pensieve-682191799" target="_blank" rel="noopener noreferrer">
-<img src="Pensieve.gif" width="300" alt="Pensieve Animation">
+<img src="Pensieve.gif" width="250" alt="Pensieve Animation">
 </a>
 
 Hi there! Welcome to my pensieve!
@@ -12,3 +12,4 @@ Hi there! Welcome to my pensieve!
 My motivation originates from the [digital garden](https://jzhao.xyz/posts/networked-thought) concept that I stumbled upon one day, in which I deeply resonated with. I am looking into my life experience in a networked way. While my life priorities may change in different phases, it doesn't mean they disappear; instead, they accumulate.
 
 If you find yourself curious about mingling ideas, feel free to dive in!
+[[About me]] | [[Why I start writing here]]
