@@ -12,7 +12,7 @@ It is a frustrating moment.
 
 Therefore, I am searching for a **structure** and a **process** to locate more useful information and transform it into potential actions in my context of use.
 
-## Writing as learning
+### Writing as learning
 First, I want to have an interconnected database completely established by myself. 
 
 I learned the concept of LLM Wiki, but I am not a big fan of it. I experienced downsides like hallucinations, information compression or loss, or trustworthiness issue. Of course, agent models can be upgraded, provided with clearer instructions, and use [[Human and AI Collaboration#Human-In-The-Loop|Human-in-the-loop]] approach to resolve the aforementioned issues. But I have more faith in a DIY way in this regard.
