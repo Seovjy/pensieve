@@ -114,7 +114,7 @@ plugins:
     options:
       fontOrigin: googleFonts
       header: Merriweather
-      body: Plus Jakarta Sans
+      body: Fira Sans
       code: IBM Plex Mono
   - source: "@quartz-themes/core"
     enabled: false
