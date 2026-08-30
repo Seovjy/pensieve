@@ -12,5 +12,5 @@ My motivation originates from the [digital garden](https://jzhao.xyz/posts/netwo
 I am looking into my life experience in a networked way. While my life priorities may change in different phases, it doesn't mean they disappear; instead, they accumulate.
 
 If you find yourself curious about mingling ideas, feel free to dive in! 
-[[About me]] | [[The Why]]
+[[About me]] | [[Why I start writing here]]
 
