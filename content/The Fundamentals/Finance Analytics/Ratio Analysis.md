@@ -1,6 +1,7 @@
 ---
 tags:
   - Finance
+  - notes
 ---
 ## Liquidity Ratios
 ### Current ratio
