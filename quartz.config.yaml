@@ -275,7 +275,7 @@ plugins:
     order: 5
     layout:
       position: beforeBody
-      priority: 15
+      priority: 35
       display: all
   - source: "@quartz-community/obsidian-plugin-excalidraw"
     enabled: true
