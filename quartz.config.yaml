@@ -182,7 +182,7 @@ plugins:
       groupOptions:
         order: 2
   - source: "@quartz-community/backlinks"
-    enabled: false
+    enabled: true
     layout:
       position: right
       priority: 50
