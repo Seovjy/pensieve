@@ -1,7 +1,6 @@
 ---
 tags:
   - Finance
-  - notes
 ---
 ### Horizontal analysis
 as trend analysis, to evaluate a series of financial statement data over a period of time, see where's the assets growth coming from

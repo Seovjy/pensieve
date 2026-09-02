@@ -1,7 +1,6 @@
 ---
 tags:
   - Tech
-  - notes
 ---
 ### Human-In-The-Loop
 Humans actively review and approve AI decisions

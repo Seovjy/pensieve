@@ -3,21 +3,33 @@ import { registerCondition } from "./quartz/plugins/loader/conditions"
 import { componentRegistry } from "./quartz/components/registry"
 import type { ExplorerOptions } from "./.quartz/plugins"
 
+// posts/ and notes/ keep growing, so Explorer only shows the folders
+// themselves (still clickable -> their folder-page lists everything) and
+// hides every file inside them.
 const filterFn: ExplorerOptions["filterFn"] = (node) => {
-  const tags = node.data?.tags
-  if (Array.isArray(tags)) {
-    return !tags.includes("notes")
+  const segments = node.slugSegments ?? []
+  const topSegment = segments[0]
+  if ((topSegment === "posts" || topSegment === "notes") && segments.length > 1) {
+    return false
   }
   return true
 }
 
-// Pin "about-me" above everything else (folders included), otherwise keep the
-// plugin's default ordering: folders before files, then alphabetical.
+// Pin "about-me" above everything else, then "posts" before "notes" among
+// folders, otherwise keep the plugin's default ordering: folders before
+// files, then alphabetical.
 const sortFn: ExplorerOptions["sortFn"] = (a, b) => {
   const aPinned = a.slugSegment === "about-me"
   const bPinned = b.slugSegment === "about-me"
   if (aPinned && !bPinned) return -1
   if (!aPinned && bPinned) return 1
+
+  const folderOrder: Record<string, number> = { posts: 0, notes: 1 }
+  const aOrder = folderOrder[a.slugSegment ?? ""]
+  const bOrder = folderOrder[b.slugSegment ?? ""]
+  if (aOrder !== undefined && bOrder !== undefined) return aOrder - bOrder
+  if (aOrder !== undefined) return -1
+  if (bOrder !== undefined) return 1
 
   if ((!a.isFolder && !b.isFolder) || (a.isFolder && b.isFolder)) {
     return (a.displayName || "").localeCompare(b.displayName || "", undefined, {

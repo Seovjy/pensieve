@@ -2,7 +2,7 @@ Hi! I am Tzu Ying Hsu , also Jadyn, or Jayeong (자영).
 You can call me whatever feels most comfortable for you.
 
 ### Something looks hard
-I am currently based in Seoul, Korea for my pursuit of #Finance study, driven by a desire to sharpen my numerical intuition and turn quantitative analysis into second nature, allowing me to interpret business problems through financial data.
+I am currently based in Seoul, Korea for my pursuit of finance study, driven by a desire to sharpen my numerical intuition and turn quantitative analysis into second nature, allowing me to interpret business problems through financial data.
 
 Building on my master's program, I have had the opportunity to explore AI literacy and business analytics through the courses in this era of unprecedented AI evolution. 
 
