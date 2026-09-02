@@ -5,4 +5,4 @@ registerCondition("index-only", (props) => props.fileData.slug === "index")
 
 const config = await loadQuartzConfig()
 export default config
-export const layout = await loadQuartzLayout()
+export const layout = await loadQuartzLayout({})
