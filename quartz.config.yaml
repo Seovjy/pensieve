@@ -197,7 +197,7 @@ plugins:
       position: beforeBody
       priority: 35
   - source: "@quartz-community/tag-list"
-    enabled: false
+    enabled: true
     layout:
       position: beforeBody
       priority: 40
@@ -241,8 +241,7 @@ plugins:
     enabled: false
     options:
       links:
-        GitHub: https://github.com/jackyzha0/quartz
-        Discord Community: https://discord.gg/cRFFHYye7t
+        Back to Top: "#"
     layout:
       position: footer
       priority: 50
@@ -266,7 +265,6 @@ plugins:
       includeAll: false
       includedProperties:
         - description
-        - tags
         - aliases
       excludedProperties: []
       hidePropertiesView: false
@@ -287,6 +285,7 @@ plugins:
   - source: github:quartz-community/explorer
     enabled: true
     options:
+      title: Thoughts
       folderDefaultState: collapsed
       folderClickBehavior: link
       useSavedState: true
