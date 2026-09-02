@@ -45,7 +45,7 @@ const mapFn: ExplorerOptions["mapFn"] = (node) => {
     node.displayName = "🧙🏻 About me"
   }
   if (node.isFolder && node.slugSegment === "tags") {
-    node.displayName = "Tag Themes"
+    node.displayName = "tag themes"
   }
   return node
 }
