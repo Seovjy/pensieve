@@ -337,10 +337,12 @@ export function renderPage(
 
   const lang = componentData.fileData.frontmatter?.lang ?? cfg.locale?.split("-")[0] ?? "en"
   const direction = i18n(cfg.locale).direction ?? "ltr"
-  // During local dev (--serve), the dev server serves from root without the
-  // baseUrl subpath, so basePath must be empty to avoid broken links.
-  const basePath =
-    componentData.ctx.argv.serve || !cfg.baseUrl
+  // During local dev (--serve), the dev server serves from root by default, so
+  // basePath must be empty to avoid broken links — unless --baseDir was passed
+  // to mount the preview under the same subpath the site will be deployed to.
+  const basePath = componentData.ctx.argv.serve
+    ? componentData.ctx.argv.baseDir || ""
+    : !cfg.baseUrl
       ? ""
       : new URL(`https://${cfg.baseUrl}`).pathname.replace(/\/$/, "")
   const doc = (
