@@ -245,8 +245,18 @@ async function getManifest(source: PluginSource): Promise<PluginManifest | null>
   return (await readManifestFromPackageJson(source)) ?? (await resolvePluginManifest(source))
 }
 
+/** Layout as resolved from quartz.config.yaml, before being handed to PageTypeDispatcher. */
+export type ResolvedLayout = {
+  defaults: Partial<FullPageLayout>
+  byPageType: Record<string, Partial<FullPageLayout>>
+}
+
 export async function loadQuartzConfig(
   configOverrides?: Partial<GlobalConfiguration>,
+  // a transform that
+  // wants a component on every page must patch `byPageType` entries too, not
+  // just `defaults`.
+  layoutTransform?: (layout: ResolvedLayout) => ResolvedLayout,
 ): Promise<QuartzConfig> {
   const json = readPluginsJson()
 
@@ -509,7 +519,10 @@ export async function loadQuartzConfig(
 
   // Load layout and add PageTypeDispatcher to emitters.
   // This must happen after plugin instantiation so the component registry is populated.
-  const layout = await loadQuartzLayout()
+  let layout = await loadQuartzLayout()
+  if (layoutTransform) {
+    layout = layoutTransform(layout)
+  }
   plugins.emitters.push(
     builtinPlugins.PageTypes.PageTypeDispatcher({
       defaults: layout.defaults,

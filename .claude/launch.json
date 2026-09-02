@@ -1,0 +1,10 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "pensieve-preview",
+      "url": "http://localhost:8183",
+      "port": 8183
+    }
+  ]
+}

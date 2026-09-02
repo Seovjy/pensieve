@@ -1,6 +1,7 @@
 import { loadQuartzConfig, loadQuartzLayout } from "./quartz/plugins/loader/config-loader"
 import { registerCondition } from "./quartz/plugins/loader/conditions"
 import { componentRegistry } from "./quartz/components/registry"
+import CustomFooter from "./quartz/components/CustomFooter"
 import type { ExplorerOptions } from "./.quartz/plugins"
 
 // posts/ and notes/ keep growing, so Explorer only shows the folders
@@ -61,6 +62,19 @@ componentRegistry.setOptionOverrides("explorer", { filterFn, sortFn, mapFn })
 
 registerCondition("index-only", (props) => props.fileData.slug === "index")
 
-const config = await loadQuartzConfig()
+// independently-built footer array, so patch each one plus defaults to show this on
+// every page.
+const footerComponent = CustomFooter()
+const config = await loadQuartzConfig(undefined, (layout) => {
+  layout.defaults.footer = [...(layout.defaults.footer ?? []), footerComponent]
+  for (const pageType of Object.keys(layout.byPageType)) {
+    const override = layout.byPageType[pageType]
+    layout.byPageType[pageType] = {
+      ...override,
+      footer: [...(override.footer ?? []), footerComponent],
+    }
+  }
+  return layout
+})
 export default config
 export const layout = await loadQuartzLayout({})

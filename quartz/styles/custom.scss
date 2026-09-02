@@ -13,6 +13,11 @@ body[data-slug="index"] .article-title {
   display: none;
 }
 
+/* 讓首頁 (index) 的圖片置中 */
+body[data-slug="index"] .markdown-preview-view p:has(img) {
+  text-align: center;
+}
+
 :root {
   --font-size-base: 1.2rem;
 }
