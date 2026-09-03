@@ -2,7 +2,7 @@ import { loadQuartzConfig, loadQuartzLayout } from "./quartz/plugins/loader/conf
 import { registerCondition } from "./quartz/plugins/loader/conditions"
 import { componentRegistry } from "./quartz/components/registry"
 import CustomFooter from "./quartz/components/CustomFooter"
-import type { ExplorerOptions } from "./.quartz/plugins"
+import type { ExplorerOptions, RecentNotesOptions } from "./.quartz/plugins"
 
 // posts/ and notes/ keep growing, so Explorer only shows the folders
 // themselves (still clickable -> their folder-page lists everything) and
@@ -59,6 +59,14 @@ const mapFn: ExplorerOptions["mapFn"] = (node) => {
 // Calling ExternalPlugin.Explorer(...) therefore builds and discards a component
 // instance without ever registering the override. Register it directly instead.
 componentRegistry.setOptionOverrides("explorer", { filterFn, sortFn, mapFn })
+
+// restrict to posts/ specifically so "Recent Pours"
+const recentPoursFilter: RecentNotesOptions["filter"] = (f) =>
+  f.slug !== undefined && f.slug.startsWith("posts/") && f.slug !== "posts/index"
+
+componentRegistry.setOptionOverrides("@quartz-community/recent-notes", {
+  filter: recentPoursFilter,
+})
 
 registerCondition("index-only", (props) => props.fileData.slug === "index")
 

@@ -246,7 +246,17 @@ plugins:
       position: footer
       priority: 50
   - source: "@quartz-community/recent-notes"
-    enabled: false
+    enabled: true
+    options:
+      title: Recent Pours
+      limit: 1
+      showTags: false
+      linkToMore: "posts/"
+      hideFolderPages: true
+      hideTagPages: true
+    layout:
+      position: left
+      priority: 60
   - source: "@quartz-community/spacer"
     enabled: true
     options: {}
@@ -285,7 +295,7 @@ plugins:
   - source: github:quartz-community/explorer
     enabled: true
     options:
-      title: Thoughts
+      title: Threads of thoughts
       folderDefaultState: collapsed
       folderClickBehavior: link
       useSavedState: true
