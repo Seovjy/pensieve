@@ -18,6 +18,24 @@ body[data-slug="index"] .markdown-preview-view p:has(img) {
   text-align: center;
 }
 
+/*  Recent Notes / Explorer 標題對齊 */
+.recent-notes > h3 {
+  margin-top: 0;
+}
+
+/* Recent Notes 項目字級對齊 Explorer 項目 (0.95rem) */
+.recent-notes .section > .desc > h3 {
+  font-size: 0.95rem;
+}
+
+/* Recent Notes 行高節奏對齊 Explorer -- recent-notes 套件本身給每個項目
+   margin: 1rem 0 (16px)，但 Explorer 的 <li> 完全沒有 margin，只靠
+   line-height (25.6px) 撐開每一行。項目一多，1rem 的差距會逐行累積，兩欄
+   就會越來越對不齊，所以把它歸零，兩邊用同一個行高節奏 */
+.recent-notes .recent-ul > li {
+  margin: 0;
+}
+
 :root {
   --font-size-base: 1.2rem;
 }

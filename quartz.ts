@@ -43,7 +43,7 @@ const sortFn: ExplorerOptions["sortFn"] = (a, b) => {
 
 const mapFn: ExplorerOptions["mapFn"] = (node) => {
   if (node.slugSegment === "about-me") {
-    node.displayName = "🧙🏻 About me"
+    node.displayName = "About me"
   }
   if (node.isFolder && node.slugSegment === "tags") {
     node.displayName = "tag themes"

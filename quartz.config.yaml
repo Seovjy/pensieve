@@ -249,14 +249,18 @@ plugins:
     enabled: true
     options:
       title: Recent Pours
-      limit: 1
+      limit: 4
       showTags: false
       linkToMore: "posts/"
       hideFolderPages: true
       hideTagPages: true
     layout:
-      position: left
-      priority: 60
+      position: afterBody
+      priority: 20
+      group: afterBodyRow
+      groupOptions:
+        grow: true
+        align: start
   - source: "@quartz-community/spacer"
     enabled: true
     options: {}
@@ -295,7 +299,7 @@ plugins:
   - source: github:quartz-community/explorer
     enabled: true
     options:
-      title: Threads of thoughts
+      title: Thought Threads
       folderDefaultState: collapsed
       folderClickBehavior: link
       useSavedState: true
@@ -303,12 +307,42 @@ plugins:
     layout:
       position: left
       priority: 50
+      display: mobile-only
+  # Same plugin, second instance: tablet/desktop show this one in afterBody
+  # instead, side by side with Recent Notes
+  - source: github:quartz-community/explorer
+    enabled: true
+    options:
+      title: Thought Threads
+      folderDefaultState: collapsed
+      folderClickBehavior: link
+      useSavedState: true
+    order: 50
+    layout:
+      position: afterBody
+      priority: 10
+      display: desktop-only
+      group: afterBodyRow
+      groupOptions:
+        basis: 300px
+        grow: false
+        shrink: true
+        align: start
 layout:
   groups:
     toolbar:
       priority: 35
       direction: row
       gap: 0.5rem
+    # Desktop/tablet: Explorer (fixed ~300px) + Recent Notes (fills the rest)
+    # side by side. wrap: wrap lets it fall back to stacked when the row
+    # doesn't fit (tablet), with no separate breakpoint-specific config
+    # needed -- flexbox handles that on its own.
+    afterBodyRow:
+      priority: 10
+      direction: row
+      wrap: wrap
+      gap: 2rem
   byPageType:
     "404":
       positions:
