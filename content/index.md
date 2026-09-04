@@ -1,5 +1,5 @@
 ---
-title: "Seojy"
+title: "jy.pensieve"
 ---
 
 ![[Pensieve3.png|700]]
