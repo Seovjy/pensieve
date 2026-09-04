@@ -2,7 +2,7 @@
 title: "The Pensieve"
 ---
 
-![[Pensieve2.jpg|800]]
+![[Pensieve3.png|700]]
 
 [Pensieve](https://www.harrypotter.com/writing-by-jk-rowling/pensieve) was created by combining the words: "pensive" and "sieve"—meaning a pool sorting out what is important and thoughtful. 
 
