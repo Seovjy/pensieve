@@ -245,8 +245,13 @@ plugins:
     layout:
       position: footer
       priority: 50
+  # Superseded by two direct RecentNotes() calls in quartz.ts ("Recent Pours"
+  # for posts/, "Recent Notes" for notes/) -- a single YAML entry can't give
+  # two instances of the same plugin different `filter` functions, since
+  # componentRegistry option overrides are keyed by plugin name/source, shared
+  # across every entry using it, not per YAML entry.
   - source: "@quartz-community/recent-notes"
-    enabled: true
+    enabled: false
     options:
       title: Recent Pours
       limit: 4
@@ -296,8 +301,11 @@ plugins:
       darkMode: auto
       exportPadding: 20
     order: 50
+  # Explorer turned off. Left disabled rather than deleted -- flip both
+  # enabled flags back to true to restore it (mobile hamburger + desktop
+  # afterBody instance, side by side with Recent Notes/Recent Pours).
   - source: github:quartz-community/explorer
-    enabled: true
+    enabled: false
     options:
       title: Thought Threads
       folderDefaultState: collapsed
@@ -308,10 +316,8 @@ plugins:
       position: left
       priority: 50
       display: mobile-only
-  # Same plugin, second instance: tablet/desktop show this one in afterBody
-  # instead, side by side with Recent Notes
   - source: github:quartz-community/explorer
-    enabled: true
+    enabled: false
     options:
       title: Thought Threads
       folderDefaultState: collapsed
@@ -334,15 +340,6 @@ layout:
       priority: 35
       direction: row
       gap: 0.5rem
-    # Desktop/tablet: Explorer (fixed ~300px) + Recent Notes (fills the rest)
-    # side by side. wrap: wrap lets it fall back to stacked when the row
-    # doesn't fit (tablet), with no separate breakpoint-specific config
-    # needed -- flexbox handles that on its own.
-    afterBodyRow:
-      priority: 10
-      direction: row
-      wrap: wrap
-      gap: 2rem
   byPageType:
     "404":
       positions:

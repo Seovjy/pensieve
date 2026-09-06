@@ -5,7 +5,7 @@ title: "pensieve"
 ![[Pensieve3.png|700]]
 
 Hi! I'm Jadyn. I write and take notes here. 
-I call this space my pensieve—a name from the Potter series combining 'pensive' and 'sieve'—a pool for sorting out important and meaningful thoughts.
+I call this space my pensieve—a name from the Potter series combining 'pensive' and 'sieve'—a pool for plotting out important and meaningful thoughts.
 
 If you find yourself curious about mingling ideas, feel free to dive in! 
 
