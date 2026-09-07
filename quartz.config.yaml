@@ -173,8 +173,9 @@ plugins:
     layout:
       position: right
       priority: 10
+  # Superseded by the direct TS toolbar build in quartz.ts
   - source: "@quartz-community/search"
-    enabled: true
+    enabled: false
     layout:
       position: header
       priority: 20
@@ -202,7 +203,7 @@ plugins:
       position: beforeBody
       priority: 40
   - source: "@quartz-community/page-title"
-    enabled: true
+    enabled: false
     layout:
       position: header
       priority: 10
@@ -211,7 +212,7 @@ plugins:
         order: 1
         grow: true
   - source: "@quartz-community/darkmode"
-    enabled: true
+    enabled: false
     layout:
       position: header
       priority: 30
@@ -245,11 +246,7 @@ plugins:
     layout:
       position: footer
       priority: 50
-  # Superseded by two direct RecentNotes() calls in quartz.ts ("Recent Pours"
-  # for posts/, "Recent Notes" for notes/) -- a single YAML entry can't give
-  # two instances of the same plugin different `filter` functions, since
-  # componentRegistry option overrides are keyed by plugin name/source, shared
-  # across every entry using it, not per YAML entry.
+  # Superseded by two direct RecentNotes() calls in quartz.ts
   - source: "@quartz-community/recent-notes"
     enabled: false
     options:
@@ -301,9 +298,6 @@ plugins:
       darkMode: auto
       exportPadding: 20
     order: 50
-  # Explorer turned off. Left disabled rather than deleted -- flip both
-  # enabled flags back to true to restore it (mobile hamburger + desktop
-  # afterBody instance, side by side with Recent Notes/Recent Pours).
   - source: github:quartz-community/explorer
     enabled: false
     options:
@@ -335,11 +329,6 @@ plugins:
         shrink: true
         align: start
 layout:
-  groups:
-    toolbar:
-      priority: 35
-      direction: row
-      gap: 0.5rem
   byPageType:
     "404":
       positions:

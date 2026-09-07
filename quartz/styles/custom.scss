@@ -28,11 +28,27 @@ body[data-slug="index"] .markdown-preview-view p:has(img) {
   font-size: 0.95rem;
 }
 
-/* Recent Notes 行高節奏對齊 Explorer -- recent-notes 套件本身給每個項目
-   margin: 1rem 0 (16px)，但 Explorer 的 <li> 完全沒有 margin，只靠
-   line-height (25.6px) 撐開每一行。項目一多，1rem 的差距會逐行累積，兩欄
-   就會越來越對不齊，所以把它歸零，兩邊用同一個行高節奏 */
+/* Recent Notes 行高節奏對齊，兩邊用同一個行高節奏 */
 .recent-notes .recent-ul > li {
+  margin: 0;
+}
+
+/* 讓 Search 只顯示放大鏡圖示，隱藏文字與外框 */
+.search {
+  min-width: auto;
+  max-width: none;
+  flex-grow: 0 !important;
+}
+.search > .search-button {
+  border: none;
+  padding: 0;
+  width: auto;
+  height: auto;
+}
+.search > .search-button > p {
+  display: none;
+}
+.search > .search-button svg {
   margin: 0;
 }
 

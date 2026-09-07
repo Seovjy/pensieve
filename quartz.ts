@@ -2,12 +2,17 @@ import { loadQuartzConfig, loadQuartzLayout } from "./quartz/plugins/loader/conf
 import { registerCondition } from "./quartz/plugins/loader/conditions"
 import CustomFooter from "./quartz/components/CustomFooter"
 import Flex from "./quartz/components/Flex"
+import NavLink from "./quartz/components/NavLink"
 import { RecentNotes } from "./.quartz/plugins"
 import type { RecentNotesOptions } from "./.quartz/plugins"
+import { PageTitle } from "@quartz-community/page-title"
+import { Search } from "@quartz-community/search"
+import { Darkmode } from "@quartz-community/darkmode"
+import type { SimpleSlug } from "./quartz/util/path"
 
 registerCondition("index-only", (props) => props.fileData.slug === "index")
 
-// "Recent Pours" (posts/) and "Recent Notes" (notes/) built 
+// "Recent Pours" (pours/) and "Recent Notes" (threads/) built
 const recentPoursFilter: RecentNotesOptions["filter"] = (f) =>
   f.slug !== undefined && f.slug.startsWith("pours/") && f.slug !== "pours/index"
 const recentNotesFilter: RecentNotesOptions["filter"] = (f) =>
@@ -45,7 +50,21 @@ const afterBodyRow = Flex({
 
 const footerComponent = CustomFooter()
 
+// Header toolbar built
+const aboutLink = NavLink({ text: "About", slug: "about-me" as SimpleSlug })
+const toolbar = Flex({
+  direction: "row",
+  gap: "1rem",
+  components: [
+    { Component: PageTitle(), grow: true, align: "center", justify: "start" },
+    { Component: aboutLink, align: "center" },
+    { Component: Search(), align: "center" },
+    { Component: Darkmode(), align: "center" },
+  ],
+})
+
 const config = await loadQuartzConfig(undefined, (layout) => {
+  layout.defaults.header = [...(layout.defaults.header ?? []), toolbar]
   layout.defaults.afterBody = [...(layout.defaults.afterBody ?? []), afterBodyRow]
   layout.defaults.footer = [...(layout.defaults.footer ?? []), footerComponent]
   // patch every byPageType entry, or
@@ -54,6 +73,7 @@ const config = await loadQuartzConfig(undefined, (layout) => {
     const override = layout.byPageType[pageType]
     layout.byPageType[pageType] = {
       ...override,
+      header: [...(override.header ?? []), toolbar],
       afterBody: [...(override.afterBody ?? []), afterBodyRow],
       footer: [...(override.footer ?? []), footerComponent],
     }
