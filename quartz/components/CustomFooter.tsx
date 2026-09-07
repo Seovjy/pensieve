@@ -1,10 +1,10 @@
-import { QuartzComponent, QuartzComponentConstructor, QuartzComponentProps } from "./types"
+import { QuartzComponent, QuartzComponentConstructor } from "./types"
 
-const CustomFooter: QuartzComponent = ({ fileData }: QuartzComponentProps) => {
+const CustomFooter: QuartzComponent = () => {
   return (
     <footer>
       <p>
-        {" "}<a href="#">| Back to Top |</a>
+        {" "} <a href="#">Back to Top</a>
       </p>
     </footer>
   )
