@@ -8,11 +8,16 @@ tags:
 - Time value of money: what it worths in the future
 - Compare in the same time frame.
 
+---
+
 ###### Terms
 APR as annual percentage rate
 We need to match the rate with the compound/discount period, say if certain payment or investment is compounded monthly or daily to have Effective Annual Rate.
 
 If APR = 18%, if it is compounded monthly, then the EAR = $$ \left( 1 + \frac{18\%}{12} \right)^{12} -1 \approx 19.5618\% $$
+
+---
+
 ### Perpetuity & Annuity
 $$
 PV_1 = \frac{C}{r} 
@@ -34,6 +39,8 @@ $$
 PV_3 = \frac {C}{r-g}
 $$
 
+---
+
 ### Investment Decisions
 
 - Capital Budgeting: Evaluate potential projects and investments
@@ -46,6 +53,8 @@ $$
 - The Payback Rule: The length of time it takes to recover the original investment in a project.
 - The Accounting Return: Accounting profit (ROI)
 - The Profitability Index: NPV/Investment
+
+---
 
 ### NPV
 
@@ -64,6 +73,8 @@ When IRR < $k$, NPV < 0, overpriced
 When IRR > $k$, NPV > 0, underpriced
 Pitfall: IRR cannot distinguish the different characteristics of the cash flows and can be misleading in short-term project.
 
+---
+
 ### Project Analysis
 Identify the crucial assumptions in investment proposals
 
@@ -76,6 +87,8 @@ If key variables are interrelated, consider some possible scenarios.
 
 ###### Real Options
 The flexibility to modify the projects when the future unfolds.
+
+---
 
 ### Firm Valuation: Discounted Cash Flow (DCF) model
 Firm’s value is tied to its ability to generate cash flows.
@@ -97,6 +110,8 @@ $$
 V_0 = \sum_{t=1}^{n} \frac{FCF_t}{(1 + k)^t} + \frac{FCF_{n+1}}{(k-g)}\frac{1}{(1 + k)^n}
 $$
 
+---
+
 ###### Free Cash Flow
 Cash available to all owners (debt holders and equity holders) after meeting operation & investment needs.
 
@@ -110,11 +125,16 @@ Operating Cash Flow (OCF) = EBIT + Depreciation - Tax
 Alternative: OCF = Net Operating Profits After Tax (NOPAT) + Depreciation
 tax shield reflected in $k$
 
+---
+
 ###### Net Working Capital (NWC)
 Measure firm’s [[Ratio Analysis#Liquidity Ratios|liquidity]] and short-term financial health
 $$
 Current Assets - Current Liabilities
 $$
+
+---
+
 ###### Cost of Capital $k$
 - Required return in DCF: Investors require return on their investment, which is "cost" for firms.
 - Firms' cost of capital provides an indication of how the market view the risk of firm assets.
@@ -132,6 +152,8 @@ There are several methods to determine $k_e$
 
 Reduction in taxes as a benefit comes from debt borrowing. 
 We reflect it in firm value, either FCF or $k$.
+
+---
 
 ###### CAPM
 Investors diversify, so the only risk premium they can earn is non-diversifiable risk, systematic risk.
