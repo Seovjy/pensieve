@@ -1,10 +1,12 @@
 import { QuartzComponent, QuartzComponentConstructor } from "./types"
 
+const YEAR = 2026
+
 const CustomFooter: QuartzComponent = () => {
   return (
     <footer>
       <p>
-        {" "} <a href="#">Back to Top</a>
+        {" "} © {YEAR} Jadyn Hsu | <a href="#">Back to Top</a>
       </p>
     </footer>
   )
@@ -12,7 +14,7 @@ const CustomFooter: QuartzComponent = () => {
 
 CustomFooter.css = `
 footer {
-  text-align: center;
+  text-align: left;
   margin-bottom: 0.5rem;
   opacity: 0.7;
 }
