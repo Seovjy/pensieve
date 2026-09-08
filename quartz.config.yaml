@@ -36,10 +36,10 @@ configuration:
         gray: "#6A7B88"
         darkgray: "#D1DCDE"
         dark: "#EBF3F5"
-        secondary: "#7FB3D5"
-        tertiary: "#A2C4C9"
-        highlight: rgba(127, 179, 213, 0.15)
-        textHighlight: "#3A526088"
+        secondary: "#82A993"
+        tertiary: "#9CBDAA"
+        highlight: rgba(130, 169, 147, 0.15)
+        textHighlight: "#3B524588"
 plugins:
   - source: "@quartz-community/created-modified-date"
     enabled: false
