@@ -11,6 +11,7 @@ import { Darkmode } from "@quartz-community/darkmode"
 import type { SimpleSlug } from "./quartz/util/path"
 
 registerCondition("index-only", (props) => props.fileData.slug === "index")
+registerCondition("about-me-only", (props) => props.fileData.slug === "about-me")
 
 // "Recent Pours" (pours/) and "Recent Notes" (threads/) built
 const recentPoursFilter: RecentNotesOptions["filter"] = (f) =>

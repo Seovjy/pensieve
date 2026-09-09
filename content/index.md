@@ -3,7 +3,7 @@
 title: "pensieve"
 
 ---
-![[index.jpg|620]]
+![[index.png|620]]
 
 Hi! I’m Jadyn. I write and take notes here.  
 I call this space my pensieve—a name from the Potter series combining ‘pensive’ and ‘sieve’
