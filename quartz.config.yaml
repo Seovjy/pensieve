@@ -42,9 +42,9 @@ configuration:
         textHighlight: "#3D4A3D88"
 plugins:
   - source: "@quartz-community/created-modified-date"
-    enabled: false
+    enabled: true
     options:
-      defaultDateType: modified
+      defaultDateType: created
       priority:
         - frontmatter
         - git

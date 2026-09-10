@@ -1,3 +1,7 @@
+---
+created: 2026-07-17
+---
+
 It is never easier to produce than to consume, and this concept works in every field. It is like writing compared to reading, and learning compared to teaching. Throughout my studies, the concept became more reinforcing, while I was fully committed to learning new things. 
 
 People tend to have short memories. Even though I paid my full attention in each class, that information and knowledge can't be stored in my mind eternally. They are scattered around with different formats no matter how well organized the files are.
