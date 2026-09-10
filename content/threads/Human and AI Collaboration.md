@@ -1,6 +1,7 @@
 ---
 tags:
   - Tech
+created: 2026-09-07
 ---
 ### Human-In-The-Loop
 Humans actively review and approve AI decisions

@@ -16,8 +16,8 @@ configuration:
     fontOrigin: googleFonts
     cdnCaching: true
     typography:
-      header: Schibsted Grotesk
-      body: Source Sans Pro
+      header: Inter
+      body: Inter
       code: IBM Plex Mono
     colors:
       lightMode:
@@ -113,8 +113,8 @@ plugins:
     enabled: true
     options:
       fontOrigin: googleFonts
-      header: Merriweather
-      body: Fira Sans
+      header: Inter
+      body: Inter
       code: IBM Plex Mono
   - source: "@quartz-themes/core"
     enabled: false

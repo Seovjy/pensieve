@@ -1,6 +1,7 @@
 ---
 tags:
   - Finance
+created: 2026-09-07
 ---
 
 $$
