@@ -9,7 +9,7 @@ I am currently based in Seoul, Korea for my pursuit of finance study, driven by 
 
 Building on my master's program, I have had the opportunity to explore AI literacy and business analytics through the courses in this era of unprecedented AI evolution. 
 
-I used to work in micromobility and medical manufacturing sectors, where I believe we are shipping things that make our lives better. My focus in business spans upon strategy operations and management.
+I used to work in micromobility and medical manufacturing sectors, where I believe we are shipping things that make our lives better.
 
 --- 
 
