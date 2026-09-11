@@ -243,7 +243,7 @@ plugins:
       position: left
       priority: 35
   - source: "@quartz-community/breadcrumbs"
-    enabled: true
+    enabled: false
     layout:
       position: beforeBody
       priority: 20
