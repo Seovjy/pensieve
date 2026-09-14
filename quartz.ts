@@ -13,26 +13,26 @@ import type { SimpleSlug } from "./quartz/util/path"
 registerCondition("index-only", (props) => props.fileData.slug === "index")
 registerCondition("about-me-only", (props) => props.fileData.slug === "about-me")
 
-// "Recent Pours" (pours/) and "Recent Notes" (threads/) built
+// "Outpourings" (outpourings/) and "Recent Notes" (currents/) built
 const recentPoursFilter: RecentNotesOptions["filter"] = (f) =>
-  f.slug !== undefined && f.slug.startsWith("pours/") && f.slug !== "pours/index"
+  f.slug !== undefined && f.slug.startsWith("outpourings/") && f.slug !== "outpourings/index"
 const recentNotesFilter: RecentNotesOptions["filter"] = (f) =>
-  f.slug !== undefined && f.slug.startsWith("threads/") && f.slug !== "threads/index"
+  f.slug !== undefined && f.slug.startsWith("currents/") && f.slug !== "currents/index"
 
 const recentPours = RecentNotes({
-  title: "Recent Pours",
+  title: "Outpourings",
   limit: 2,
   filter: recentPoursFilter,
-  linkToMore: "pours/",
+  linkToMore: "outpourings/",
   showTags: false,
   hideFolderPages: true,
   hideTagPages: true,
 })
 const recentNotes = RecentNotes({
-  title: "Recent Threads",
+  title: "Currents",
   limit: 2,
   filter: recentNotesFilter,
-  linkToMore: "threads/",
+  linkToMore: "currents/",
   showTags: false,
   hideFolderPages: true,
   hideTagPages: true,

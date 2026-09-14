@@ -1,1 +1,0 @@
-My memory fragments. Simple but not simpler.
