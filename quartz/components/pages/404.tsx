@@ -3,7 +3,7 @@ import { QuartzComponent, QuartzComponentConstructor, QuartzComponentProps } fro
 
 const NotFound: QuartzComponent = ({ cfg, ctx }: QuartzComponentProps) => {
   const url = new URL(`https://${cfg.baseUrl ?? "example.com"}`)
-  const baseDir = ctx.argv.serve ? "/" : url.pathname
+  const baseDir = ctx.argv.serve ? "/" : url.pathname.endsWith("/") ? url.pathname : `${url.pathname}/`
 
   return (
     <article class="popover-hint">
