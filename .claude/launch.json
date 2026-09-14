@@ -3,7 +3,8 @@
   "configurations": [
     {
       "name": "pensieve-preview",
-      "url": "http://localhost:8183",
+      "runtimeExecutable": "npx",
+      "runtimeArgs": ["quartz", "build", "--serve", "--port", "8183"],
       "port": 8183
     }
   ]
