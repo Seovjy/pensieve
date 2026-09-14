@@ -31,8 +31,8 @@ If you'd like to connect for any of the interested subject mentioned above or ma
 
 ---
 
-### About here
+### Colophon
 
-This [[Website|site]] is written in [[https://obsidian.md/|Obsidian]] and created with [[https://quartz.jzhao.xyz/|Quartz]]. It is a route I found easy to build and sustain, as everyone knows collecting and organizing content is usually the most tedious part of developing your own context.
+This [[Website|site]] is written in [[https://obsidian.md/|Obsidian]] and created with [[https://quartz.jzhao.xyz/|Quartz]]. It is a route I found easy for me to build and sustain.
 
-[Home Image](https://unsplash.com/photos/the-sun-is-shining-through-the-trees-in-the-forest-cQYFinbBCgQ) is inspired by Mother Nature’s power to soothe the mind and nurture our thoughts, it represents what I hope this site will be: a space of clarity, comfort, and continuous growth.
+[Home Image](https://unsplash.com/photos/the-sun-is-shining-through-the-trees-in-the-forest-cQYFinbBCgQ) is inspired by nature’s power to soothe the mind and nurture my thoughts, it represents what I hope this site will be: a space of clarity, comfort, and continuous growth.
