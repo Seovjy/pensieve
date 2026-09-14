@@ -81,9 +81,15 @@ strong {
   font-weight: $semiBoldWeight;
 }
 
+.page-title > a {
+  text-decoration: none;
+}
+
 a {
   font-weight: $semiBoldWeight;
-  text-decoration: none;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
   transition: color 0.2s ease;
   color: var(--secondary);
 
@@ -92,7 +98,6 @@ a {
   }
 
   &.internal {
-    text-decoration: none;
     background-color: var(--highlight);
     padding: 0 0.1rem;
     border-radius: 5px;
@@ -111,6 +116,7 @@ a {
       background-color: transparent;
       border-radius: 0;
       padding: 0;
+      text-decoration: none;
     }
     &.tag-link {
       &::before {
