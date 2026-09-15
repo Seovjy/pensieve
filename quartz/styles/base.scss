@@ -174,7 +174,7 @@ a {
 }
 
 .page {
-  max-width: calc(#{map.get($breakpoints, desktop)} + 300px);
+  max-width: calc(#{map.get($breakpoints, desktop)} + 150px);
   margin: 0 auto;
   & article {
     & > h1 {
@@ -240,6 +240,10 @@ a {
       display: flex;
       height: 100vh;
       position: sticky;
+
+      @media all and ($desktop) {
+        padding-top: 3rem;
+      }
     }
 
     & .sidebar.left {
@@ -292,6 +296,9 @@ a {
       @media all and ($mobile) {
         margin-top: 0;
         padding: 0;
+      }
+      @media all and ($desktop) {
+        margin-top: 3rem;
       }
     }
 
