@@ -11,7 +11,7 @@ import { Darkmode } from "@quartz-community/darkmode"
 import type { SimpleSlug } from "./quartz/util/path"
 
 registerCondition("index-only", (props) => props.fileData.slug === "index")
-registerCondition("about-me-only", (props) => props.fileData.slug === "about-me")
+registerCondition("about-only", (props) => props.fileData.slug === "about")
 
 // "Outpourings" (outpourings/) and "Recent Notes" (currents/) built
 const recentPoursFilter: RecentNotesOptions["filter"] = (f) =>
@@ -52,7 +52,7 @@ const afterBodyRow = Flex({
 const footerComponent = CustomFooter()
 
 // Header toolbar built
-const aboutLink = NavLink({ text: "About", slug: "about-me" as SimpleSlug })
+const aboutLink = NavLink({ text: "About", slug: "about" as SimpleSlug })
 const toolbar = Flex({
   direction: "row",
   gap: "1rem",
