@@ -45,7 +45,7 @@ I want to retrieve the knowledge that had resonated with me during this learning
 
 So I believe writing is a good way to justify my learning goals and results continuously.
 
-> "Your success in life will be determined largely by your ability to speak, your ability to write, and the quality of your ideas. In that order." — Patrick Henry Winston
+> Your success in life will be determined largely by your ability to speak, your ability to write, and the quality of your ideas. In that order. — Patrick Henry Winston
 
 ### Writing as sharing
 Secondly, I will take writing as an output of my personal knowledge management[^3]. 
@@ -58,7 +58,7 @@ That's the simple origin of publishing my work on Quartz, matching the [philosop
 
 It could be like a discovery or a half-made memo, but eventually I expect them to be connected in an expressive and knowledgeable way to also make the people who read it feel as inspired and accomplished as I do.
 
-> “One who works with the door open gets all kinds of interruptions, but they also occasionally gets clues as to what the world is and what might be important.” — Richard Hamming
+> One who works with the door open gets all kinds of interruptions, but they also occasionally gets clues as to what the world is and what might be important. — Richard Hamming
 
 [^1]: [Huberman Lab: dopamine without effort](https://ai.hubermanlab.com/s/pkKhtQC5)
 [^2]: I am not saying that reading and listening are inferior! They are also crucial factors for my thinking process!

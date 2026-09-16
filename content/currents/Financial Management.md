@@ -205,5 +205,3 @@ $$
 r_i = r_f + \beta (r_m-r_f)
 
 $$
-
-See also: [[Corporate Financial Strategy]]

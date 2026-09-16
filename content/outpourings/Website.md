@@ -15,11 +15,11 @@ I view it as craftsmanship. It doesn't mean every piece must be fully polished f
 
 --- 
 
-> "Whatever it is, there’s potential for a self-reflexive feedback loop: when you put energy into a website, in turn the website helps form your own identity.
+> Whatever it is, there’s potential for a self-reflexive feedback loop: when you put energy into a website, in turn the website helps form your own identity.
 > 
 >  How could a website complement what you already do rather than competing or repeating? 
 >  How can you make it fun or thought-provoking or (insert desired feeling here) for you? 
->  How can the process of making and cultivating a website contribute to your approach?"
+>  How can the process of making and cultivating a website contribute to your approach?
 > — Laurel Schwulst, [My website is a shifting house next to a river of knowledge. What could yours be?](https://thecreativeindependent.com/essays/laurel-schwulst-my-website-is-a-shifting-house-next-to-a-river-of-knowledge-what-could-yours-be/).
 
 ![[Website.png|450]]
