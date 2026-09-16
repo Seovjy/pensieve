@@ -45,7 +45,7 @@ Ultimately, this Pensieve serves as my digital garden, a personal knowledge mana
 
 If you are curious to learn more about the concept of a Digital Garden, I recommend the readings below:
 - [Networked Thought](https://jzhao.xyz/posts/networked-thought)— Jacky Zhao
-- [A Brief History & Ethos of the Digital Garden](https://maggieappleton.com/garden-history)— Maggie
+- [A Brief History & Ethos of the Digital Garden](https://maggieappleton.com/garden-history)— Maggie Appleton
 
 ---
 
