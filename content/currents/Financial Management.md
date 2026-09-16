@@ -1,19 +1,23 @@
 ---
 tags:
   - Finance
+  - classnotes
 created: 2026-09-09
 ---
+> [!info] 
+> Class notes are largely filtered through and compiled from my own understanding of the material. They are intended for self-learning and reference, not as an official source or absolute representation of the course content.
+
 ### Principle of Investment Valuation
 
 - The net present value of the future expected cash flow: what it worths today
 - Time value of money: what it worths in the future
-- Compare in the same time frame.
+- We compare different options in the same time frame.
 
 ---
 
 ###### Terms
 
-APR as annual percentage rate
+- APR: annual percentage rate
 
 We need to match the rate with the compound/discount period, say if certain payment or investment is compounded monthly or daily to have Effective Annual Rate.
 
@@ -39,7 +43,7 @@ $$
   
 
 $$
-PV_1 - PV_2 = AV_t
+PV_1 - PV_2 = AV_{10}
 $$
 
 ###### Growing Perpetuity  
@@ -53,13 +57,13 @@ $$
 ### Investment Decisions
 - Capital Budgeting: Evaluate potential projects and investments
 - Clarify revenue, cost and the risks
-- Focus on projects that create positive net present value: Present Value - price/cost > 0
+- Focus on projects that create positive net present value
 
 ###### Different Evaluation Techniques
 
 - Net Present Value (NPV)
 - The Internal Rate of Return (IRR)
-- The Payback Rule: The length of time it takes to recover the original investment in a project.
+- The Payback Rule: The length of time it takes to recover the original investment.
 - The Accounting Return: Accounting profit (ROI)
 - The Profitability Index: NPV/Investment
 
@@ -109,18 +113,18 @@ The flexibility to modify the projects when the future unfolds.
 Firm’s value is tied to its ability to generate cash flows.
 
 $$
-Net Assets = Debt + Equity
+\text {Net Assets} = Debt + Equity
 $$
 
 $$
-Value of Firm (Net Assets) = PV(FutureFreeCashFlow)
+\text {Value of Firm (Net Assets)} = \text {PV(Future Free Cash Flow)}
 $$
 
 $$
 V_0 = \sum_{t=1}^{\infty} \frac{FCF_t}{(1 + k)^t}
 $$
 
-If FCF grows at constant rate,
+If FCF grows at a constant rate,
 
 $$
 V_0 = \frac{FCF_0 (1+g)}{(k-g)}
@@ -138,10 +142,8 @@ $$
 
 Cash available to all owners (debt holders and equity holders) after meeting operation & investment needs.
 
-Free Cash Flow (FCF) =
-Operating Cash Flow (OCF) -
-Fixed Capital Investment (Capex) -
-Working Capital Investment (∆NWC)
+Free Cash Flow (FCF) = 
+Operating Cash Flow (OCF) - Fixed Capital Investment (Capex) - Working Capital Investment (∆NWC)
 
 Operating Cash Flow (OCF) = EBIT + Depreciation - Tax
 
@@ -155,7 +157,7 @@ tax shield reflected in $k$
 Measure firm’s [[Ratio Analysis#Liquidity Ratios|liquidity]] and short-term financial health
 
 $$
-Current Assets - Current Liabilities
+\text {Current Assets - Current Liabilities}
 $$
 
 
