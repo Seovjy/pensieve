@@ -8,6 +8,13 @@ body[data-slug="index"] {
   }
 }
 
+// Contact 隱藏日期與中繼資料 (ContentMeta)
+body[data-slug="contact"] {
+  .content-meta {
+    display: none;
+  }
+}
+
 /* 隱藏首頁 (index) 的 H1 大標題 */
 body[data-slug="index"] .article-title {
   display: none;

@@ -1,12 +1,15 @@
-import { QuartzComponent, QuartzComponentConstructor } from "./types"
+import { QuartzComponent, QuartzComponentConstructor, QuartzComponentProps } from "./types"
+import { resolveRelative, SimpleSlug } from "../util/path"
 
 const YEAR = 2026
 
-const CustomFooter: QuartzComponent = () => {
+const CustomFooter: QuartzComponent = ({ fileData }: QuartzComponentProps) => {
+  const contactHref = resolveRelative(fileData.slug!, "contact" as SimpleSlug)
   return (
     <footer>
       <p>
-        {" "} © {YEAR} Jadyn Hsu | <a href="#">Back to Top</a>
+        {" "} © {YEAR} Jadyn Hsu - <a href={contactHref}>Contact</a> |{" "}
+        <a href="#">Back to Top</a>
       </p>
     </footer>
   )
