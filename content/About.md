@@ -3,23 +3,17 @@ created: 2026-08-06
 ---
 ### Bio
 
+![[About.png|320]]
 Hi! I am Tzu Ying Hsu, also Jadyn.
+Born in Taiwan, currently based in Seoul, Korea, where I’m studying finance.
 
-I am currently based in Seoul, Korea for my pursuit of finance study, driven by a desire to sharpen my numerical intuition and turn quantitative analysis into second nature.
+I like building connections.
 
-Building on my master's program, I have had the opportunity to explore AI literacy and business analytics through the courses.
+Business and technology.  
+Ideas and execution.  
+People and cultures.
 
-I used to work in micromobility and medical manufacturing sectors, where I believe we are shipping things that make our lives better.
-
-My interest in language, sports, and reading, have led me to the place I have today. To learn, to communicate, and to build collaboratively in every corner of the world I can explore. 
-
-I am a native Mandarin speaker. And I have been on a language-learning adventure since I was 7. 
-
-Sports in many ways teach me life lessons. They help me take good care of myself, both physically and mentally. The sports I participate in include basketball, cycling, triathlon, and running.
-
-Contrary to active events, I like reading. For me, reading is quiet but powerful. It serves as a vessel for [[Why I start writing here#Writing as sharing|shared]] knowledge.
-
-If you'd like to connect for any of the interested subject mentioned above or make new friends, feel free to [reach out](mailto:hsu024@gmail.com).
+I’m drawn to the intersection, where ideas meet opportunities, and opportunities turn into something real.
 
 ---
 
