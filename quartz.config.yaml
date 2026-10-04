@@ -10,6 +10,7 @@ configuration:
   baseUrl: seovjy.github.io/pensieve
   ignorePatterns:
     - private
+    - Private
     - templates
     - .obsidian
   theme:
