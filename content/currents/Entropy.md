@@ -12,6 +12,6 @@ When the system reaches thermodynamic equilibrium, where heat is distributed uni
 ### Information Theory
 Entropy measures the uncertainty or surprise of the information.
 
-High entropy indicates higer randomness and variety, thus requiring more information to be transferred.
+High entropy indicates higher randomness and variety, meaning each observation reveals a greater amount of information.
 
 [^1]: A random note while reading the vision of [ATOMS](https://atoms.co/vision)
