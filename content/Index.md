@@ -2,7 +2,8 @@
 title: Home
 created: 2026-07-01
 ---
-
+![[Howl.png|320]]
+<p class="caption">Photo from Howl's Moving Castle</p>
 
 Welcome to my pensieve, a name from the Potter series combining ‘pensive’ and ‘sieve’, a pool for plotting out important and meaningful thoughts. 
 

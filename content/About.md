@@ -1,17 +1,6 @@
 ---
 created: 2026-08-06
 ---
-### Bio
-
-<div class="float-figure">
-
-![[Howl.png|320]]
-
-<p class="caption">Photo from Howl's Moving Castle</p>
-
-</div>
-
-
 Hi! I am Tzu Ying Hsu, also Jadyn.
 Born in Taiwan, currently based in Seoul, Korea, where I’m studying finance.
 
@@ -23,7 +12,29 @@ People and cultures.
 
 I’m drawn to the intersection, where ideas meet opportunities, and opportunities turn into something real.
 
----
+In my free time, I am usually on my bike or on my feet exploring.
+<style>
+  .strava-badge- { display: inline-block; height: 32px; }
+  .strava-badge- img { visibility: hidden; height: 32px; }
+  .strava-badge-:hover { background-position: 0 -47px; filter: none; }
+  .strava-badge-follow .external-icon { display: none; }
+  .strava-badge-follow { height: 32px; width: 32px; background: url(//badges.strava.com/echelon-sprite-32.png) no-repeat 0 0; border-radius: 30%; filter: grayscale(1); transition: filter 0.2s; }
+  .badges { display: flex; align-items: center; gap: 0.5rem; margin: 1rem 0; }
+  .badges a { text-decoration: none; }
+  .badges .external-icon { display: none; }
+  .badge { display: flex; align-items: center; justify-content: center; width: 32px; height: 32px; border-radius: 30%; background: #787878; color: #fff; transition: background-color 0.2s; }
+  .badge:hover { color: #fff; }
+  .badge svg { width: 16px; height: 16px; }
+  .badge-linkedin:hover { background: #0a66c2; }
+  .badge-email:hover { background: #9db5b2; }
+</style>
+<div class="badges">
+<a href="https://strava.com/athletes/105136543" class="strava-badge- strava-badge-follow" target="_blank"><img src="//badges.strava.com/echelon-sprite-32.png" alt="Strava" /></a>
+<a href="https://www.linkedin.com/in/jadyn-hsu/" class="badge badge-linkedin" target="_blank" aria-label="LinkedIn" title="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 1 1 0-4.125 2.062 2.062 0 0 1 0 4.125zM7.119 20.452H3.555V9h3.564v11.452z"/></svg></a>
+<a href="mailto:hsu024@gmail.com" class="badge badge-email" aria-label="Email" title="Email"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></a>
+</div>
+
+--- 
 
 ### Origin
 
@@ -54,8 +65,6 @@ If you are curious to learn more about the concept of a Digital Garden, I recomm
 ### Colophon
 
 This [[Website|site]] is written in [[https://obsidian.md/|Obsidian]] and created with [[https://quartz.jzhao.xyz/|Quartz]]. It is a route I found easy to build and sustain.
-
-[Home Image](https://unsplash.com/photos/the-sun-is-shining-through-the-trees-in-the-forest-cQYFinbBCgQ) is inspired by nature’s power to soothe the mind and nurture our thoughts, it represents what I hope this site will be: a space of clarity, comfort, and continuous growth.
 
 --- 
 
