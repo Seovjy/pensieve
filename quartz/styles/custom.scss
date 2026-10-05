@@ -62,24 +62,53 @@ html {
   font-size: 16.5px;
 }
 
+/* 圖片說明文字：<p class="caption">…</p> */
+p.caption {
+  font-size: 0.85rem;
+  color: var(--gray);
+  margin-top: -2rem;
+}
+
 /* 標題字級對齊工具列 */
 h2.page-title {
   font-size: 1.25rem;
 }
 
 
-/* About */
-body[data-slug="about"] {
-  article img {
-    float: right;
-    margin: 0.25rem 1.5rem 1rem 0;
+/* 文繞圖 <div class="float-figure"> */
+.float-figure {
+  float: right;
+  width: min-content;
+  margin: 0.25rem 0 1rem 1.5rem;
 
-    @media all and ($mobile) {
-      float: none;
-      margin: 1rem 0;
-    }
+  img {
+    display: block;
+    float: none;
+    margin: 0;
+    max-width: none;
   }
 
+  p {
+    margin: 0;
+  }
+
+  p.caption {
+    margin-top: 0.4rem;
+  }
+
+  @media all and ($mobile) {
+    float: none;
+    width: auto;
+    margin: 1rem 0;
+
+    img {
+      max-width: 100%;
+    }
+  }
+}
+
+/* About */
+body[data-slug="about"] {
   article hr {
     clear: both;
   }

@@ -3,7 +3,15 @@ created: 2026-08-06
 ---
 ### Bio
 
-![[About.png|320]]
+<div class="float-figure">
+
+![[Howl.png|320]]
+
+<p class="caption">Photo from Howl's Moving Castle</p>
+
+</div>
+
+
 Hi! I am Tzu Ying Hsu, also Jadyn.
 Born in Taiwan, currently based in Seoul, Korea, where I’m studying finance.
 
