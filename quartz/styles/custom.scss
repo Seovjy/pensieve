@@ -74,6 +74,11 @@ h2.page-title {
   font-size: 1.25rem;
 }
 
+/* 加寬header與內文之間的間距 */
+.page-header > header {
+  padding-bottom: 1.5rem;
+}
+
 
 /* 文繞圖 <div class="float-figure"> */
 .float-figure {
