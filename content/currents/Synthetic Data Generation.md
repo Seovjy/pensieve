@@ -17,6 +17,6 @@ Similar concept learned:
 
 In product development process, synthetic consumers are used as a way to conduct market research quicker and without losing accuracy.
 
-While they serve as complements, not replacements, for human research the remain limited in modeling emotional nuance, cultural context, and group dynamics.
+While they serve as complements, not replacements; for human research, they remain limited in modeling emotional nuance, cultural context, and group dynamics.
 
 [Source](https://www.pymc-labs.com/blog-posts/synthetic-consumers-a-practical-guide)
